@@ -37,7 +37,7 @@ Checkpoint 1 (User):
 Deliverables:
 - SwiftUI app shell: Map, Zones, Alerts, Profile sections.
 - Models: Zone, ZoneType, ZonePurpose, AccessLevel.
-- Services: LocationManager, MapboxService, ZonesService (mock data).
+- Services: AppLocationManager, MapboxService, ZonesService (mock data).
 - Mapbox token/config wiring in `Info.plist`.
 
 Checkpoint 2 (User):
@@ -104,5 +104,6 @@ Checkpoint 6 (User):
 - Battery usage: tune location update intervals.
 
 ## Verification Notes
+- AppLocationManager rename applied in the app shell.
 - Each checkpoint should result in explicit user approval before proceeding.
 - Any new requirement discovered mid-phase triggers a brief scope recheck.

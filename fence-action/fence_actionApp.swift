@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct fence_actionApp: App {
+    @StateObject private var zonesService = ZonesService()
+    @StateObject private var locationManager = AppLocationManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(zonesService)
+                .environmentObject(locationManager)
         }
     }
 }
